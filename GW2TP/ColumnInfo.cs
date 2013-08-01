@@ -12,6 +12,10 @@ using ListViewEmbeddedControls;
 
 namespace GW2TP
 {
+    /// <summary>
+    /// TODO: Initialize current Buy lists like what was done for the Sell List.  Need to go through the entire list for both Buy and Sell, to screen alertable filters instead of just 
+    ///     filtering the alertable options during display (e.g. getOutBidSubItem).
+    /// </summary>
     public class ColumnInfo
     {
         public delegate ListViewItem.ListViewSubItem ColumnSubItemDelegate(Item item, IColumnInfo colInfo);

@@ -21,6 +21,9 @@ using System.Diagnostics;
 
 namespace GW2TP
 {
+    /// <summary>
+    /// TODO: Add a new tab for the tree view of the crafting cost for a specific item.  Check out gw2dbRecipe.Print method.
+    /// </summary>
     public partial class GW2TP : Form, ISettingsTab, ISearchTab, IGemsTab, ITransaction
     {
         private TradeWorker trader = new TradeWorker();

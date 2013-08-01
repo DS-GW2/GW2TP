@@ -14,6 +14,9 @@ using ExpanderApp;
 
 namespace GW2TP
 {
+    /// <summary>
+    /// TODO: Ability to click on a "Crafting Cost" subitem to move to the crafting cost tree view tab for that specific item.
+    /// </summary>
     public class Search : DataSource
     {
         private const int SEARCH_RESULT_PAGE_SIZE = 10;

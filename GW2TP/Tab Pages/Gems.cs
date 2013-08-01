@@ -11,6 +11,9 @@ using GW2Miner.Domain;
 
 namespace GW2TP
 {
+    /// <summary>
+    /// TODO: Add a Refresh button
+    /// </summary>
     class Gems
     {
         private IGemsTab gemsTab;
