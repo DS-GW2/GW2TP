@@ -525,6 +525,8 @@ namespace GW2TP
         {
             if (trader.GW2DBLoaded)
             {
+                /// TODO: Use the gw2spidy API to get the recipe which contains the crafting cost, since we only need the gold cost value anyway 
+                /// if the gw2spidy API fails with an exception then do this by calling MinCraftingCost as per original code
                 RecipeCraftingCost recipeCraftCost = trader.MinCraftingCost(item.Recipes);
                 return (recipeCraftCost != null) ? recipeCraftCost.GoldCost : 0;
             }

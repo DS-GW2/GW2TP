@@ -777,5 +777,21 @@ namespace GW2TP
         {
             Process.Start("http://www.gw2db.com/");
         }
+
+        private void GemRefresh_Click(object sender, EventArgs e)
+        {
+            lock (classLock)
+            {
+                try
+                {
+                    ThreadPool.QueueUserWorkItem((obj) => this.gemsDisplay.Update());
+                }
+                catch (Exception ex)
+                {
+                    fileLogger.CreateEntry("Error calling gemDisplay.Update");
+                    logException(ex);
+                }
+            }
+        }
     }
 }

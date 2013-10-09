@@ -152,6 +152,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.GW2DBPicture = new System.Windows.Forms.PictureBox();
+            this.GemRefresh = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.SearchTabPage.SuspendLayout();
@@ -584,6 +585,7 @@
             // 
             // GemsTabPage
             // 
+            this.GemsTabPage.Controls.Add(this.GemRefresh);
             this.GemsTabPage.Controls.Add(this.GoldToUSD);
             this.GemsTabPage.Controls.Add(this.label7);
             this.GemsTabPage.Controls.Add(this.label6);
@@ -1158,7 +1160,7 @@
             // 
             this.toolStripStatusLabel19.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripStatusLabel19.Name = "toolStripStatusLabel19";
-            this.toolStripStatusLabel19.Size = new System.Drawing.Size(694, 19);
+            this.toolStripStatusLabel19.Size = new System.Drawing.Size(824, 19);
             this.toolStripStatusLabel19.Spring = true;
             // 
             // toolStripStatusLabel20
@@ -1452,6 +1454,16 @@
             this.GW2DBPicture.TabStop = false;
             this.GW2DBPicture.Click += new System.EventHandler(this.GW2DBPicture_Click);
             // 
+            // GemRefresh
+            // 
+            this.GemRefresh.Location = new System.Drawing.Point(984, 450);
+            this.GemRefresh.Name = "GemRefresh";
+            this.GemRefresh.Size = new System.Drawing.Size(75, 23);
+            this.GemRefresh.TabIndex = 8;
+            this.GemRefresh.Text = "Refresh";
+            this.GemRefresh.UseVisualStyleBackColor = true;
+            this.GemRefresh.Click += new System.EventHandler(this.GemRefresh_Click);
+            // 
             // GW2TP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1624,6 +1636,7 @@
         private System.Windows.Forms.PictureBox GW2DBPicture;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ComboBox ArmorWeightComboBox;
+        private System.Windows.Forms.Button GemRefresh;
     }
 }
 
