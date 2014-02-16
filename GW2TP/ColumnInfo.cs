@@ -396,7 +396,7 @@ namespace GW2TP
                 //bool iAmSelling, underCut;
                 //Item myItemOnSale;
 
-                item.Worth = trader.Worth(item, itemSellList);
+                item.Worth = trader.Worth(item, itemSellList, null, Globals.BLSalvageCost);
                 //item.Worth = Math.Max(item.VendorPrice, (int)(0.85 * trader.GetMySellPrice(itemSellList, item, out iAmSelling, out underCut, out myItemOnSale)));
 
                 //item.IAmSelling = iAmSelling;

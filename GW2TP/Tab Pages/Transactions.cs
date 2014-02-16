@@ -147,6 +147,11 @@ namespace GW2TP
                     }
                     else if (!Globals.gettingSessionKey)
                     {
+                        if (this.buy && !this.past)
+                        {
+                            Globals.BLSalvageCost = trader.BlackLionKitSalvageCost;
+                            trader.ClearInsigniaPrices();
+                        }
                         if (getAllPages) offset = 1; // if we are getting all pages we start at offset 1
                         //trader.get_my_buys_sells_transactions(this.buy, getAllPages, this.past, offset, TRANSACTION_PAGE_SIZE, orderBy, sortDescending).ContinueWith((fetchDataTask) => 
                         trader.get_my_buys_sells_transactions(this.buy, getAllPages, this.past, offset, TRANSACTION_PAGE_SIZE).ContinueWith((fetchDataTask) =>

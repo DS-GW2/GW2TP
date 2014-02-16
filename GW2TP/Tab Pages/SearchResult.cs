@@ -306,7 +306,11 @@ namespace GW2TP
                     {
                         trader.RenewBuyOrder(item, (int)info.SubItem.Tag);
                         Thread.Sleep(1000);
-                        Refresh();
+                        this.listView.Invoke((MethodInvoker)delegate
+                        {
+                            info.SubItem.Text = "-";
+                        });
+                        //Refresh();
                         //MessageBox.Show(item.Name + " Outbidded!");
                     });
                 }
@@ -316,7 +320,11 @@ namespace GW2TP
                     {
                         trader.BuyAllRidiculousSellOrders((List<ItemBuySellListingItem>)info.SubItem.Tag, item);
                         Thread.Sleep(1000);
-                        Refresh();
+                        this.listView.Invoke((MethodInvoker)delegate
+                        {
+                            info.SubItem.Text = "";
+                        });
+                        //Refresh();
                         //MessageBox.Show("All ridiculous under sell orders for " + item.Name + " Bought!");
                     });
                 }

@@ -12,6 +12,7 @@ namespace GW2TP
         public const int MINLEVEL = 0;
         public const int MAXLEVEL = 80;
         public const string APPNAME = "GW2TP";
+        public static double BLSalvageCost = 0.0;
         public static bool gettingSessionKey = false;
     }
 }
